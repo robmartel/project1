@@ -6,7 +6,7 @@ $color-dark: #60106b;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
-$header-font: "Lobster", cursive;
+$header-font: 'Roboto', sans-serif;
 
 body {
     font-family: $body-font;
@@ -22,7 +22,7 @@ h2 {
 
 header {
     h2 {
-        color: $color-pale;
+        color: $color-primary;
     }
 }
 
@@ -34,7 +34,7 @@ header {
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    background-image: white;
     color: white;
 }
 

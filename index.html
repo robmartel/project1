@@ -12,7 +12,8 @@
      <!-- Additional CSS must be placed after Bootstrap CSS -->
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+     
+     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="css/styles.css" />
 
     <title>Charlee's Golf Club</title>
@@ -26,15 +27,15 @@
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid"/>
                 </div>
-                    <div class="col">
-                        <h1>Golf</h1>
-                        <h2>a better way to camp</h2>
+                    <div class="col ml-5 mt-5">
+                        <h1>Charlee's</h1>
+                        <h2>Golf Club</h2>
                     </div>
                     <div class="col-md-4 col-xl-2 mt-4">
                         <!--the text-nowrap class makes sure that the wording reserve campsite stays on one line instead of defaulting to two lines-->
                         <!--Beginning of Modal-->
-                        <a role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="modal" data-target="#reserveModal">
-                           Reserve Campsite
+                        <a role="button" class="btn btn-lg btn-warning text-nowrap" data-toggle="modal" data-target="#reserveModal">
+                           Book T-Time
                         </a>
                     </div>
             </div>
@@ -43,15 +44,15 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
-                    <h3 class="modal-title">Reserve a Campsite</h3>
+                <div class="modal-header bg-success text-white">
+                    <h3 class="modal-title">Book a T-Time</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form>
                             <div class="form-group row">
-                                <label class="col-sm-6 col-form-label">Number of Campers</label>
+                                <label class="col-sm-6 col-form-label">Number of Players</label>
                                 <div class="col">
                                     <select class="form-control" name="numCampers" id="numCampers" >
                                         <option>Select...</option>
@@ -59,8 +60,6 @@
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
                                     </select>
                                 </div>
                                 
@@ -71,15 +70,21 @@
                                     <input type="date" class="form-control" id="date" name="date" placeholder="" />
                                 </div>
                             </div>
+                            <div class="form-group row">
+                                <label for="time" class="col-sm-6 col-form-label">Time</label>
+                                <div class="col-sm-6">
+                                    <input type="time" class="form-control" id="time" name="time" placeholder="" />
+                                </div>
+                            </div>
                             <!--Radio Buttons-->
                             <div class="form-group row">
-                                <label class="col-sm-6 col-form-label">Campsite Type</label>
+                                <label class="col-sm-6 col-form-label">Cart or Walk</label>
                                     <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-success active">
-                                            <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
+                                            <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Cart
                                           </label>
                                           <label class="btn btn-primary">
-                                            <input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
+                                            <input type="radio" name="siteType" id="siteRV" autocomplete="off"> Walk
                                           </label>
                                     </div>
                             </div>
@@ -96,7 +101,7 @@
         </div>
     </div>
        <!--Nav bar Begins-->
-            <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
@@ -106,13 +111,13 @@
                         <ul class="navbar-nav">
                             <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Gallery</a></li>
                             <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                         </ul>
                         <!--Beginning of Modal-->
                         <span class="navbar-text ml-auto">
                             <a role="button" data-toggle="modal" data-target="#loginModal">
-                                <i class="fa fa-sign-in"></i> Login
+                                <i class="fa fa-sign-in"></i> Members
                             </a>
                         </span>
             </div>
@@ -171,24 +176,24 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" />
+                            <img class="d-block w-100" src="img/hole-18.jpg" alt="18th Hole" />
                             <div class="carousel-caption">
-                                <h3>Breadcrumb Trail Campground</h3>
-                                <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground</p>
+                                <h3>Legendary Finishing Hole</h3>
+                                <p class="d-none d-sm-block">Test every part of your game when you get to the legendary par 5, 18th. </p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/react-lake.jpg" alt="React Lake Campground" />
+                            <img class="d-block w-100" src="img/hole-9.jpg" alt="Hole 9" />
                             <div class="carousel-caption">
-                                <h3>React Lake Campground</h3>
-                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                                <h3>Making the Turn</h3>
+                                <p class="d-none d-sm-block">Get ready to test your accuracy when making the turn. This short par 3, 9th hole is surrounded by water. </p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/chrome-river.jpg" alt="Chrome River Campground" />
+                            <img class="d-block w-100" src="img/range.jpg" alt="Range" />
                             <div class="carousel-caption">
-                                <h3>Chrome River Campground</h3>
-                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River. </p>
+                                <h3>The Range</h3>
+                                <p class="d-none d-sm-block">Get ready for your round and enjoy the scenery. Our range overlooks a canyon! </p>
                             </div>
                         </div>
                     
@@ -203,7 +208,7 @@
                     </a>
                     <!--Play and pause buttons in the carousel using jQuery-->
                     
-                        <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <button class="btn btn-warning btn-sm" id="carouselButton">
                             <i class="fa fa-pause"></i>
                         </button>
                                           
@@ -212,15 +217,15 @@
         </div>
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
+                <h2 class="text-sm-right">Putt & Chip</h2>
             </div>
             <div class="col">
                 <div class="media">
                     <!--mr-3 gives a margin-right of 3 and img-thumbnail just rounds the corners of the image-->
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail thumbnail" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/chipping-area.jpg" alt="Chipping area thumbnail" />
                     <div class="media-body align-self-center">
-                        <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                        <h3>Practice Area</h3>
+                        <p class="d-none d-sm-block">Improve your game by chipping and putting on our world class practice area!</p>
                     </div>
                 </div>
             </div>
@@ -229,29 +234,29 @@
     
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
+                <h2>Featured Holes</h2>
             </div>
                     <div class="col"> 
                         <div class="media"> 
                             <div class="media-body align-self-center">                 
-                                <h3>React Lake Campground</h3>
-                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>                         
+                                <h3>Charlee's Scenic Par 5</h3>
+                                <p class="d-none d-sm-block">Nestled in the foothills of Mountains, this par 5 challenges players of all skill levels and provides beautiful scenery along the way.</p>                         
                             </div>
-                            <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake thumbnail" />
+                            <img class="d-flex ml-3 img-thumbnail" src="img/featured-holes.jpg" alt="Featured Holes thumbnail" />
                         </div>
                     </div> 
         </div>
 
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Our Community Partners</h2>
+                <h2 class="text-sm-right">Our World Class Menu</h2>
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/menu.jpg" alt="Bootstrap Outfitters" />
                     <div class="media-body aligh-self-center">
-                        <h3>Bootstrap Outfitters</h3>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                        <h3>Charlee's Kitchen</h3>
+                        <p class="d-none d-sm-block">Charlee's kitchen supplies you with quality food before, during and after your round!</p>
                     </div>
                 </div>
             </div>
@@ -290,7 +295,7 @@
                 <ul class="list-unstyled">
                     <li><a href="#">Home</a></li>
                     <li><a href="aboutus.html">About</a></li>
-                    <li><a href="#">Sites</a></li>
+                    <li><a href="#">Gallery</a></li>
                     <li><a href="contactus.html">Contact</a></li>
                 </ul>
             </div>
@@ -304,7 +309,7 @@
             </div>
             <div class="col-sm-4 text-center">
                 <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> info@charleesgolfclub.com</a>
             </div>                
        </div>
     </div>
