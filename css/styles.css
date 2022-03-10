@@ -40,26 +40,9 @@ a, a:hover {
   position: relative; }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 25px;
-  position: absolute;
-  top: 10px;
-  width: 75%;
-  padding-top: 5px; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 #carouselButton {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 100; }
-
-#carouselButtonMenu {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 100; }
-
-#carouselButton3 {
   position: absolute;
   right: 0;
   bottom: 0;

@@ -70,27 +70,9 @@ a, a:hover {
 
 .carousel-caption {
     background-color: $color-black-transparent;
-    height: 25px;
-    position: absolute;
-    top: 10px;
-    width: 75%;
-    padding-top: 5px;   
-
 }
 
 #carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-}
-#carouselButtonMenu {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-}
-#carouselButton3 {
     position: absolute;
     right: 0;
     bottom: 0;
